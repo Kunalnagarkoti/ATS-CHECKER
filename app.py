@@ -10,7 +10,7 @@ import pdf2image
 from pdf2image import convert_from_bytes
 import google.generativeai as genai
 
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=os.getenv("AIzaSyBBF3sZ8WBRATKlbaenKiQOEfZGlCC41y0"))
 
 def get_gemini_response(input,pdf_cotent,prompt):
     model=genai.GenerativeModel('gemini-pro-vision')
